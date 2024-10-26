@@ -7,25 +7,25 @@ local colors = {
 }
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/48973854274252/VLG/refs/heads/main/.gitignore"))()
-local Window = Library.CreateLib("Halloween Theme", colors)
+local Window = Library.CreateLib("Main Title", colors)
 
-local Tab1 = Window:NewTab("Main")
-local Section1 = Tab1:NewSection("Main Controls")
+local Tab1 = Window:NewTab("Main Tabs")
+local Section1 = Tab1:NewSection("Tab Title For Ur Scripts info Bottom is ur scripts buttons")
 
-Section1:NewButton("Start", "Info for button", function()
+Section1:NewButton("Ur Scripts Title", "Info for button", function()
     print("Test")
 end)
 
-local Tab2 = Window:NewTab("Settings")
-local Section2 = Tab2:NewSection("Info for button")
+local Tab2 = Window:NewTab("Main Tabs")
+local Section2 = Tab2:NewSection("Title bottomid Scripts")
 
-Section2:NewButton("Apply Settings", "Info for button", function()
+Section2:NewButton("Script", "Info for button", function()
     print("Test")
 end)
 
-local Tab3 = Window:NewTab("About")
-local Section3 = Tab3:NewSection("Information")
+local Tab3 = Window:NewTab("Window Tab title")
+local Section3 = Tab3:NewSection("Scripts Title bellow scripts")
 
 Section3:NewButton("Info", "Info for button", function()
-    print("Info for button")
+    print("Test")
 end)
