@@ -1,0 +1,31 @@
+local colors = {
+    SchemeColor = Color3.fromRGB(255, 165, 0),  
+    Background = Color3.fromRGB(40, 40, 40),    
+    Header = Color3.fromRGB(30, 30, 30),         
+    TextColor = Color3.fromRGB(255, 255, 255),
+    ElementColor = Color3.fromRGB(50, 50, 50)
+}
+
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/48973854274252/VLG/refs/heads/main/.gitignore"))()
+local Window = Library.CreateLib("Halloween Theme", colors)
+
+local Tab1 = Window:NewTab("Main")
+local Section1 = Tab1:NewSection("Main Controls")
+
+Section1:NewButton("Start", "Info for button", function()
+    print("Test")
+end)
+
+local Tab2 = Window:NewTab("Settings")
+local Section2 = Tab2:NewSection("Info for button")
+
+Section2:NewButton("Apply Settings", "Info for button", function()
+    print("Test")
+end)
+
+local Tab3 = Window:NewTab("About")
+local Section3 = Tab3:NewSection("Information")
+
+Section3:NewButton("Info", "Info for button", function()
+    print("Info for button")
+end)
