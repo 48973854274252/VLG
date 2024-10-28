@@ -1,0 +1,41 @@
+local lplr = game.Players.LocalPlayer
+local camera = game:GetService("Workspace").CurrentCamera
+local CurrentCamera = workspace.CurrentCamera
+local worldToViewportPoint = CurrentCamera.worldToViewportPoint
+
+local function createNameEsp(v)
+    local Esp = Drawing.new("Text")
+    Esp.Visible = false
+    Esp.Color = Color3.new(1, 1, 1)
+    Esp.Size = 9
+    Esp.Center = true
+    Esp.Outline = true
+    Esp.OutlineColor = Color3.new(0, 0, 0)
+
+    game:GetService("RunService").RenderStepped:Connect(function()
+        if v.Character and v.Character:FindFirstChild("Humanoid") and v.Character:FindFirstChild("HumanoidRootPart") and v ~= lplr and v.Character.Humanoid.Health > 0 then
+            local RootPart = v.Character.HumanoidRootPart
+            local RootPosition, onScreen = worldToViewportPoint(CurrentCamera, RootPart.Position)
+
+            local distance = math.floor((RootPart.Position - lplr.Character.HumanoidRootPart.Position).Magnitude)
+
+            local health = v.Character.Humanoid.Health
+            local maxHealth = v.Character.Humanoid.MaxHealth
+            local healthPercentage = math.floor((health / maxHealth) * 100)
+
+            Esp.Position = Vector2.new(RootPosition.X, RootPosition.Y - 20)
+            Esp.Text = tostring(distance) .. " | " .. v.Name .. " | " .. tostring(healthPercentage) .. "%"
+            Esp.Visible = onScreen
+        else
+            Esp.Visible = false
+        end
+    end)
+end
+
+for i, v in pairs(game.Players:GetChildren()) do
+    createNameEsp(v)
+end
+
+game.Players.PlayerAdded:Connect(function(v)
+    createNameEsp(v)
+end)
