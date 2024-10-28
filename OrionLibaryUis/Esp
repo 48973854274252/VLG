@@ -8,7 +8,7 @@ local Tab = Window:MakeTab({
 })
 OrionLib:MakeNotification({
 	Name = "Info!",
-	Content = "Esp was made by Dark_Hero using Highlight",
+	Content = "Esp was made by Dark_Hero using Highlight Archived On Github Now",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
