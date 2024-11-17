@@ -1,1 +1,1 @@
-game.TextChatService.TextChannels.RBXGeneral:DisplaySystemMessage(Message)
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(word, "All")
