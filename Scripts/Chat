@@ -26,6 +26,6 @@ end)
 local Tab3 = Window:NewTab("Chat Without Ui")
 local Section3 = Tab3:NewSection("Chat Without The Chat Ui ")
 
-Section:NewTextBox("Text Chat  ᪳", "Ust this textbox to chat", function(txt)
+Section3:NewTextBox("Text Chat  ᪳", "Ust this textbox to chat", function(txt)
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/48973854274252/VLG/refs/heads/main/Script"))()
 end)
