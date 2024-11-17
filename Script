@@ -1,2 +1,1 @@
-local speaker = ChatModule.GetSpeakerFromPlayer(player)
-ChatModule.SendChatMessage(speaker, "all", "fr?")
+game.TextChatService.TextChannels.RBXGeneral:DisplaySystemMessage(Message)
