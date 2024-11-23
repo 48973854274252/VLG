@@ -33,3 +33,10 @@ end)
 Section3:NewButton("Alternative", "Different Method", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/48973854274252/VLG/refs/heads/main/Script"))()
 end)
+
+local Tab4 = Window:NewTab("〯")
+local Section3 = Tab4:NewSection("Scripts")
+
+Section4:NewButton("tool giver script", "", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/48973854274252/VLG/refs/heads/main/Script"))()
+end)
