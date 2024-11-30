@@ -67,4 +67,3 @@ game:GetService("RunService").RenderStepped:Connect(function()
     Crosshair2.To = Vector2.new(Center.X, Center.Y + 10)
     Crosshair2.Visible = true
 end)
-end)
