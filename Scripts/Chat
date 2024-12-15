@@ -37,33 +37,10 @@ end)
 local Tab4 = Window:NewTab("Scripts")
 local Section4 = Tab4:NewSection("​​")
 
-Section4:NewButton("Crosshair dot", "", function()
-    local d = Drawing.new("Circle")
-d.Color, d.Radius, d.Filled, d.Visible = Color3.new(1, 1, 1), 3, true, false
-game:GetService("RunService").RenderStepped:Connect(function()
-    d.Position = workspace.CurrentCamera.ViewportSize / 2
-    d.Visible = true
+Section4:NewButton("Synapse Old", "Loads Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/owqn/Manifest-/refs/heads/main/%F0%9F%8E%94/Synapse/SynapseOld"))()
 end)
 
-Section4:NewButton("Crosshair Cross", "", function()
-    local Crosshair = Drawing.new("Line")
-Crosshair.Color = Color3.new(1, 1, 1) 
-Crosshair.Thickness = 2
-
-local Crosshair2 = Drawing.new("Line")
-Crosshair2.Color = Color3.new(1, 1, 1)
-Crosshair2.Thickness = 2
-
-game:GetService("RunService").RenderStepped:Connect(function()
-    local Center = Vector2.new(workspace.CurrentCamera.ViewportSize.X / 2, workspace.CurrentCamera.ViewportSize.Y / 2)
-    
-    
-    Crosshair.From = Vector2.new(Center.X - 10, Center.Y)
-    Crosshair.To = Vector2.new(Center.X + 10, Center.Y)
-    Crosshair.Visible = true
-    
-    
-    Crosshair2.From = Vector2.new(Center.X, Center.Y - 10)
-    Crosshair2.To = Vector2.new(Center.X, Center.Y + 10)
-    Crosshair2.Visible = true
+Section4:NewButton("Synapse ☹︎", "Loads Synapse New Ver. Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/owqn/Manifest-/refs/heads/main/%F0%9F%8E%94/Synapse/Synapse%20%E2%98%B9%EF%B8%8E"))()
 end)
