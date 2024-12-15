@@ -35,15 +35,7 @@ Section3:NewButton("Alternative", "Different Method", function()
 end)
 
 local Tab4 = Window:NewTab("Scripts")
-local Section4 = Tab4:NewSection("72​​")
-
-Section4:NewButton("Synapse Old", "Loads Script", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/owqn/Manifest-/refs/heads/main/%F0%9F%8E%94/Synapse/SynapseOld"))()
-end)
-
-Section4:NewButton("Synapse ☹︎", "Loads Synapse New Ver. Script", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/owqn/Manifest-/refs/heads/main/%F0%9F%8E%94/Synapse/Synapse%20%E2%98%B9%EF%B8%8E"))()
-end)
+local Section4 = Tab4:NewSection("…​​")
 
 Section4:NewButton("Old-KEYLESS-Infinix-Dex", "Loader", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/48973854274252/VLG/refs/heads/main/Scripts/MC_IY%20Dex.txt"))()
@@ -53,14 +45,22 @@ Section4:NewButton("New Keyless Infinix Dex", "Loader", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/48973854274252/Source/refs/heads/main/F%E2%80%8B%20%C2%A0AK%26E%20SCRIPTS%5E%25%E2%80%8B%20%C2%A0/DEX%20MOBILE%E2%80%8B%20%C2%A0CRACKED%E2%80%8B%20%C2%A0NO%E2%80%8B%20%C2%A0KEY"))()
 end)
 
-Section4:NewButton("F3x", "Loader", function()
+Section4:NewButton("Building Tools", "Loader", function()
     loadstring(game:HttpGet("https://pastefy.app/4s7zaufo/raw"))()
 end)
 
-Section4:NewButton("game Universe Viewer", "Loader", function()
+Section4:NewButton("Game Universe Viewer", "Loader", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/owqn/Connec/refs/heads/main/git/Connec/t%E2%80%8B%20%C2%A0"))()
 end)
 
-Section4:NewButton("Telekinesis", "Loader", function()
+Section4:NewButton("Audio logger", "Loader", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/owqn/-ASCII/refs/heads/main/BouldGravityGun"))()
+end)
+
+Section4:NewButton("Babft Ui", "Loader", function()
+    loadstring(game:HttpGet("…"))()
+end)
+
+Section4:NewButton("…", "Loader", function()
+    loadstring(game:HttpGet("…"))()
 end)
