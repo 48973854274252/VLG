@@ -6,7 +6,7 @@ local colors = {
     ElementColor = Color3.fromRGB(23, 22, 22 )
 }
 
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/48973854274252/VLG/refs/heads/main/.gitignore"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/48973854274252/1v-2-4v-5v-6-9v-15-7-14-8-16v-10-17v-11v-12-18-19-13v/refs/heads/main/Kavo%E3%85%A4"))()
 local Window = Library.CreateLib("48973854274252's Chat Script", colors)
 
 local Tab1 = Window:NewTab("enable")
