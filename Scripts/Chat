@@ -7,7 +7,7 @@ local colors = {
 }
 
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/48973854274252/1v-2-4v-5v-6-9v-15-7-14-8-16v-10-17v-11v-12-18-19-13v/refs/heads/main/Kavo%E3%85%A4"))()
-local Window = Library.CreateLib("48973854274252's Chat Script", colors)
+local Window = Library.CreateLib("Chat Script", colors)
 
 local Tab1 = Window:NewTab("enable")
 local Section1 = Tab1:NewSection("Chat Ui")
@@ -21,46 +21,4 @@ local Section2 = Tab2:NewSection("Chat Ui")
 
 Section2:NewButton("Hide Chat", "disables the chat", function()
     game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, false)
-end)
-
-local Tab3 = Window:NewTab("Chat Without Ui")
-local Section3 = Tab3:NewSection("Chat Without The Chat Ui ")
-
-Section3:NewTextBox("Text Chat", "Ust this textbox to chat", function(txt)
-	loadstring(game:HttpGet(""))()
-end)
-
-Section3:NewButton("Alternative", "Different Method", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/48973854274252/VLG/refs/heads/main/Script"))()
-end)
-
-local Tab4 = Window:NewTab("Scripts")
-local Section4 = Tab4:NewSection("…​​")
-
-Section4:NewButton("Old-KEYLESS-Infinix-Dex", "Loader", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/48973854274252/VLG/refs/heads/main/Scripts/MC_IY%20Dex.txt"))()
-end)
-
-Section4:NewButton("New Keyless Infinix Dex", "Loader", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/48973854274252/Source/refs/heads/main/F%E2%80%8B%20%C2%A0AK%26E%20SCRIPTS%5E%25%E2%80%8B%20%C2%A0/DEX%20MOBILE%E2%80%8B%20%C2%A0CRACKED%E2%80%8B%20%C2%A0NO%E2%80%8B%20%C2%A0KEY"))()
-end)
-
-Section4:NewButton("Building Tools", "Loader", function()
-    loadstring(game:HttpGet("https://pastefy.app/4s7zaufo/raw"))()
-end)
-
-Section4:NewButton("Game Universe Viewer", "Loader", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/owqn/Connec/refs/heads/main/git/Connec/t%E2%80%8B%20%C2%A0"))()
-end)
-
-Section4:NewButton("Audio logger", "Loader", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/owqn/-ASCII/refs/heads/main/BouldGravityGun"))()
-end)
-
-Section4:NewButton("Babft Ui", "Loader", function()
-    loadstring(game:HttpGet("…"))()
-end)
-
-Section4:NewButton("…", "Loader", function()
-    loadstring(game:HttpGet("…"))()
 end)
